@@ -10,7 +10,7 @@ import Educator from './pages/educator/Educator.jsx'
 import Dashboard from './pages/educator/Dashboard.jsx'
 import AddCourse from './pages/educator/AddCourse.jsx'
 import MyCourse from './pages/educator/MyCourses.jsx'
-import StudentsEnrollend from './pages/educator/StudentsEnrollend.jsx'
+import StudentsEnrolled from './pages/educator/StudentsEnrolled.jsx'
 import Navbar from './components/student/Navbar'
 
 const App = () => {
@@ -32,7 +32,7 @@ const App = () => {
           <Route path='educator' element={<Dashboard />} />
           <Route path='add-course' element={<AddCourse />} />
           <Route path='my-courses' element={<MyCourse />} />
-          <Route path='student-enrolled' element={<StudentsEnrollend />} />
+          <Route path='student-enrolled' element={<StudentsEnrolled />} />
         </Route>
       </Routes>
     </div>

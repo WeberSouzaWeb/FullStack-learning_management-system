@@ -113,7 +113,11 @@ const CourseDetails = () => {
                   <img src={assets.time_clock_icon} alt="clock icon" />
                   <p>{calculateCourseDuration(courseData)}</p>
                 </div>
-
+                <div className='h-4 w-px bg-gray-500/40'></div>
+                <div className='flex items-center gap-1'>
+                  <img src={assets.time_clock_icon} alt="clock icon" />
+                  <p>{calculateNoOfLectures(courseData)}lessons</p>
+                </div>
               </div>
             </div>
           </div>

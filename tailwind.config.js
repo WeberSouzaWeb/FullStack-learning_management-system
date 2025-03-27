@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,tsx,jsx}",
@@ -26,6 +26,9 @@ export default {
         'custom-card': '0px 4px 15px 2px rgba(0, 0, 0, 0.1)',
       },
     },
+  },
+  corePlugins: {
+    preflight: true, // Ensure preflight is enabled (default)
   },
   plugins: [],
 }

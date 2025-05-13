@@ -1,4 +1,4 @@
-import React,{ createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { dummyCourses } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import humanizeDuration from "humanize-duration";
@@ -35,24 +35,22 @@ const AppContextProvider = (props) => {
 
     // Function to calculate Course Chapter Time
     const calculateChapterTime = (chapter) => { // Function to calculate total duration of chapter
-        let totalDuration = 0                    // totalDuration is in minutes has to be passed
-        chapter.chapContent.map((lecture) =>
-            totalDuration += lecture.duration
-        )
-        return humanizeDuration(totalDuration * 60 * 1000, { units: ['h', 'm'], round: true })
-    }
-    // Function to calculate total duration of course
-    const calculateDuration = (course) => {
         let time = 0
-        course.courseContent.map((chapter) => chapter.chapContent.map((lecture) => time += lecture.duration))
+        chapter.chapterContent.map((lecture) => time += lecture.duration)
         return humanizeDuration(time * 60 * 1000, { units: ['h', 'm'], round: true })
     }
-
+    // Function to calculate total duration of course
+    const calculateCourseDuration = (course) => {
+        let time = 0  // totalDuration is in minutes has to be passed
+        course.courseContent.map((chapter) => chapter.chapterContent.map(
+            (lecture) => time += lecture.lectureDuration))
+        return humanizeDuration(time * 60 * 1000, { units: ['h', 'm'], round: true })
+    }
     //function calculate no of lectures in course
     const calculateNoOfLectures = (course) => {
         let totalLectures = 0
         course.courseContent.forEach(chapter => {
-            if (Array.isArray(chapter.chapContent)) {
+            if (Array.isArray(chapter.chapterContent)) {
                 totalLectures += chapter.chapterContent.length
             }
         });
@@ -70,7 +68,7 @@ const AppContextProvider = (props) => {
         calculateRating,
         isEducator, setIsEducator,
         calculateChapterTime,
-        calculateDuration,
+        calculateCourseDuration,
         calculateNoOfLectures
     }
 

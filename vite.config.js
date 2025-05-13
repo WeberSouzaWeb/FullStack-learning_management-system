@@ -5,16 +5,23 @@ import autoprefixer from 'autoprefixer'
 
 // https://vite.dev/config/
 export default defineConfig({
+  plugins: [react()],
   css: {
     postcss: {
       plugins: [
         tailwindcss(),
         autoprefixer(),
-        react(),
       ],
     },
   },
   server: {
-    open: true, // Automatically open the browser
+    port: 5173,
+    open: true, // Isso pode abrir a página automaticamente no navegador
+    hmr: true
   },
+  build: {
+    rollupOptions: {
+      external: ['react-router-dom'],
+    }
+  }
 })

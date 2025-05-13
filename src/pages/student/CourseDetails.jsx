@@ -3,13 +3,14 @@ import { useParams } from 'react-router-dom'
 import { AppContext } from '../../context/AppContext'
 import Loading from '../../components/student/Loading'
 import { assets } from '../../assets/assets'
+import humanizeDuration from 'humanize-duration'
 
 const CourseDetails = () => {
 
   const { id } = useParams()
   const [courseData, setCourseData] = useState(null)
   const [openSections, setOpenSections] = useState({})
-  const { allCourses, calculateRating, calculateNoOfLectures, calculateCourseDuration, calculateChapterTime } = useContext(AppContext)
+  const { allCourses, calculateRating, calculateNoOfLectures, calculateCourseDuration, calculateChapterTime, currency } = useContext(AppContext)
 
   const fetchCourseData = async () => {
     const findCourse = allCourses.find(item => item._id === id)
@@ -39,7 +40,7 @@ const CourseDetails = () => {
             <p>{calculateRating(courseData)}</p>
             <div className='flex'>
               {[...Array(5)].map((_, i) => (
-                <img src={i < Math.floor(calculateRating(courseData)) ? assets.star : assets.star_blank} alt="" className='w-3.5 h-3.5' />
+                <img key={i} src={i < Math.floor(calculateRating(courseData)) ? assets.star : assets.star_blank} alt="" className='w-3.5 h-3.5' />
               ))}
             </div>
             <p className='text-blue-600'>({courseData.courseRatings.length} {courseData.courseRatings.length > 1 ? 'ratings' : 'rating'})</p>
@@ -60,29 +61,28 @@ const CourseDetails = () => {
                     </div>
                     <p className='text-sm md:text-default'>{chapter.chapterContent.length} lectures - {calculateChapterTime(chapter)}</p>
                   </div>
+
+                  <div className={`overflow-hidden transition-all duration-300 ${openSections[index] ? 'max-h-96' : 'max-h-0'}`}>
+                    <ul className='list-disc md:pl-10 pl-4 pr-4 py-2 text-gray-600 border-t border-gray-300'>
+                      {chapter.chapterContent.map((lecture, i) => ( // Search for chapter to play
+                        <li key={i} className='flex items-start gap-2 py-1'>
+                          <img src={assets.play_icon} alt="play icon" className='w-4 h-4 mt-1' />
+                          <div className='flex items-center justify-between w-full text-gray-800 text-xs md:text-default'>
+                            <p className='text-sm'>{lecture.lectureTitle}</p>
+                            <div className='flex gap-2'>
+                              {lecture.isPreview && <p className='text-blue-600 cursor-pointer'>Preview</p>}
+                              <p>{humanizeDuration(lecture.lectureDuration * 60 * 1000, { units: ['h', 'm'] })}</p>
+                            </div>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ))}
               <p>{calculateCourseDuration(courseData)} total hours</p>
             </div>
-
-            <div className={`overflow-hidden transition-all duration-300 ${openSections[index] ? 'max-h-96' : 'max-h-0'}`}>
-              <ul className='list-disc md:pl-10 pl-4 pr-4 py-2 text-gray-600 border-t border-gray-300'>
-                {chapter.chapterContent.map((lecture, i) => ( // Search for chapter to play
-                  <li key={i} className='flex items-start gap-2 py-1'>
-                    <img src={assets.play_icon} alt="play icon" className='w-4 h-4 mt-1' />
-                    <div className='flex items-center justify-between w-full text-gray-800 text-xs md:text-default'>
-                      <p className='text-sm'>{lecture.lectureTitle}</p>
-                      <div className='flex gap-2'>
-                        {lecture.isPreview && <p className='text-blue-600 cursor-pointer'>Preview</p>}
-                        <p>{humanizeDuration(lecture.lectureDuration * 60 * 1000, { units: ['h', 'm'] })}</p>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
-
           <div className='pt-20 text-sm md:text-default '>
             <h3 className='text-xl font-semibold text-gray-800'>Course Description</h3>
             <p className='pt-3 rich-text' dangerouslySetInnerHTML={{ __html: courseData.courseDescription }}></p>

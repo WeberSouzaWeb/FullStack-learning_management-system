@@ -23,7 +23,7 @@ const CourseDetails = () => {
 
   useEffect(() => {
     fetchCourseData()
-  }, [])
+  }, [allCourses])
 
   const toggleSection = (index) => {
     setOpenSections((prev) => ({ ...prev, [index]: !prev[index] }));
@@ -94,20 +94,20 @@ const CourseDetails = () => {
         </div>
         {/** Right Column */}
         <div className='max-w-course-card z-10 shadow-custom-card rounded-t md:rounded-none overflow-hidden bg-white min-w-[300px] sm:min-w-[420px]'>
-          <img src={courseData.courseThumbnail} alt="" />
+          {
+            playerData ?
+              <Youtube videoId={playerData.videoId} opts={{
+                playerVars: {
+                  autoplay: 1
+                }
+              }} iframeClassName='w-full aspect-video' />
+              : <img src={courseData.courseThumbnail} alt="" />
+          }
+
           <div className='pt-5'>
             <div className='flex items-center gap-2'>
-              {
-                playerData ?
-                  <Youtube videoId={playerData.videoId} opts={{
-                    playerVars: {
-                      autoplay: 1
-                    }
-                  }} iframeClassName='w-full aspect-video' />
-                  : <img className='w-3.5' src={assets.time_left_clock_icon} alt="time left clock icon" />
-              }
-
-              <p><span className='text-red-500'>5 days</span> left at this price!</p>
+              <img className='w-3.5' src={assets.time_left_clock_icon} alt="time left clock icon" />
+              <p className='text-red-500'><span className='font-medium'>5 days</span> left at this price!</p>
             </div>
 
             <div className=' flex gap-3 items-center pt-2'>

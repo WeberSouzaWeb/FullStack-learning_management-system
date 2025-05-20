@@ -12,6 +12,7 @@ import AddCourse from './pages/educator/AddCourse.jsx'
 import MyCourse from './pages/educator/MyCourses.jsx'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled.jsx'
 import Navbar from './components/student/Navbar'
+import "quill/dist/quill.snow.css";
 
 const App = () => {
 

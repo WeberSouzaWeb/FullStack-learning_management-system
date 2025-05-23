@@ -35,12 +35,12 @@ const CourseDetails = () => {
         <div className='absolute top-0 left-0 w-full h-section-height -z-1 bg-gradient-to-b from-cyan-100/70'></div>
 
         {/** Left Column */}
-        <div>
-          <h1>{courseData.courseTitle}</h1>
+        <div className='max-w-xl z-10 text-gray-500'>
+          <h1 className='md:text-course-deatails-heading-large text-course-details-heading-small font-semibold text-gray-800'>{courseData.courseTitle}</h1>
           <p className='pt-4 md:text-base text-sm' dangerouslySetInnerHTML={{ __html: courseData.courseDescription.slice(0, 200) }}></p>
 
           {/** review and ratings*/}
-          <div className='flex justify-between items-center space-x-2 pt-3 pb-1 '>
+          <div className='flex items-center space-x-2 pt-3 pb-1 '>
             <p>{calculateRating(courseData)}</p>
             <div className='flex'>
               {[...Array(5)].map((_, i) => (
@@ -84,7 +84,6 @@ const CourseDetails = () => {
                   </div>
                 </div>
               ))}
-              <p>{calculateCourseDuration(courseData)} total hours</p>
             </div>
           </div>
           <div className='pt-20 text-sm md:text-default '>

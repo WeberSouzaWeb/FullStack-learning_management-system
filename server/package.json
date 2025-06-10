@@ -10,7 +10,7 @@
     "server": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Web Sette - Weber Souza",
   "license": "ISC",
   "dependencies": {
     "@clerk/express": "^1.4.20",

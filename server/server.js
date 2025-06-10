@@ -9,17 +9,25 @@ import { clerkMiddleware } from '@clerk/express'
 // Initialize Express
 const app = express()
 
-// Connect to database
-await connectDB()
 
 // Middlewares
 app.use(cors())
+app.use(express.json())
+
+
+let dbConnected = false
+connectDB().then(conn => dbConnected = conn);
+
 app.use(clerkMiddleware())
 
 // Routes
 app.get('/', (req, res) => res.send("API Working"))
 app.post('/clerk', express.json(), clerkWebhooks)
 app.use('/api/educator', express.json(), educatorRouter)
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
 
 // Port
 const PORT = process.env.PORT || 5000

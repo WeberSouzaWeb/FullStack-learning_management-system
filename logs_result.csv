@@ -1,0 +1,141 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId","traceId","sessionId","invocationId","instanceId"
+"2025-06-10 12:04:47",1749557087339,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",-1,"t9gh7-1749557085463-a3f44bf86e8f","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","OiyBeadwtqjpFmFEItRSkNTxDx9PZJq723g1fBBOutA=",""
+"2025-06-10 12:04:45",1749557085536,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",500,"t9gh7-1749557085463-a3f44bf86e8f","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1776,"iad1",65,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","OiyBeadwtqjpFmFEItRSkNTxDx9PZJq723g1fBBOutA=",""
+"2025-06-10 12:04:44",1749557084473,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",-1,"2wtzn-1749557081062-efb47cbff58d","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","iG3jyxTUVCIwr3KHcd6j0pOs3NMnUpr0WU4htB_-E-Q=",""
+"2025-06-10 12:04:41",1749557081132,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",500,"2wtzn-1749557081062-efb47cbff58d","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1852,"iad1",67,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","iG3jyxTUVCIwr3KHcd6j0pOs3NMnUpr0WU4htB_-E-Q=",""
+"2025-06-10 11:58:22",1749556702350,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",-1,"4x28z-1749556700834-285b5dafa22f","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","tD16xsV1CZQpn9P6X-g8UPcoVeJNItAPNQwPn1lhh7I=",""
+"2025-06-10 11:58:20",1749556700901,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",500,"4x28z-1749556700834-285b5dafa22f","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1435,"iad1",139,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","tD16xsV1CZQpn9P6X-g8UPcoVeJNItAPNQwPn1lhh7I=",""
+"2025-06-10 11:58:20",1749556700670,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",-1,"qvjr9-1749556699044-d83db435e3d5","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","qdBfocIYhMWmTksrnW708FzTwryjCrxxbnhCnDarMjs=",""
+"2025-06-10 11:58:19",1749556699115,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",500,"qvjr9-1749556699044-d83db435e3d5","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1527,"iad1",135,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","qdBfocIYhMWmTksrnW708FzTwryjCrxxbnhCnDarMjs=",""
+"2025-06-10 11:54:13",1749556453408,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",-1,"mvc66-1749556452181-7e944f4749a8","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","7gwRNevOQrSEMUGxPLjnWynN6iUhHy9FnTtjae3kVgw=",""
+"2025-06-10 11:54:12",1749556452251,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",500,"mvc66-1749556452181-7e944f4749a8","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1138,"iad1",137,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","7gwRNevOQrSEMUGxPLjnWynN6iUhHy9FnTtjae3kVgw=",""
+"2025-06-10 11:54:12",1749556452050,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",-1,"hpc5g-1749556450851-c0f028104fb8","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","tSH4APyPf9SPC8QnL9RwtIVwNVKXlHM-x77Rt3H_CAY=",""
+"2025-06-10 11:54:10",1749556450920,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",500,"hpc5g-1749556450851-c0f028104fb8","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1108,"iad1",136,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","tSH4APyPf9SPC8QnL9RwtIVwNVKXlHM-x77Rt3H_CAY=",""
+"2025-06-10 11:51:05",1749556265402,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",-1,"bt4b9-1749556264203-0de27af0bc22","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","wVzyHgLe9CJeDeBmd1iUEqOzuvFOPjYdhtuER4jL6hU=",""
+"2025-06-10 11:51:04",1749556264274,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/favicon.ico","GET","",500,"bt4b9-1749556264203-0de27af0bc22","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1107,"iad1",136,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","wVzyHgLe9CJeDeBmd1iUEqOzuvFOPjYdhtuER4jL6hU=",""
+"2025-06-10 11:51:04",1749556264050,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",-1,"bhxsf-1749556261354-2dadce8c0d19","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",-1,"iad1",-1,-1,"MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+MongoParseError: Invalid scheme, expected connection string to start with ""mongodb://"" or ""mongodb+srv://""
+    at new ConnectionString (/var/task/server/node_modules/mongodb-connection-string-url/lib/index.js:86:19)
+    at parseOptions (/var/task/server/node_modules/mongodb/lib/connection_string.js:203:17)
+    at new MongoClient (/var/task/server/node_modules/mongodb/lib/mongo_client.js:52:61)
+    at NativeConnection.createClient (/var/task/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)
+    at NativeConnection.openUri (/var/task/server/node_modules/mongoose/lib/connection.js:1071:34)
+    at Mongoose.connect (/var/task/server/node_modules/mongoose/lib/mongoose.js:450:15)
+    at connectDB (file:///var/task/server/configs/mongodb.js:7:20)
+    at file:///var/task/server/server.js:13:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","0k8MrtNHfiW8QGDlh-ZDcH0HKFpTeqxx-9yrMRUrZGM=",""
+"2025-06-10 11:51:01",1749556261426,"full-stack-learning-management-system-backend-lfmugcb36.vercel.app/","GET","",500,"bhxsf-1749556261354-2dadce8c0d19","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","error","production","main","MISS","lambda","/server.js","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","full-stack-learning-management-system-backend-lfmugcb36.vercel.app","dpl_HnJSFDYJfAJxTzgpUk37mzYorNyR",1121,"iad1",140,1024,"","prj_fV04wjp48FqbnedSvMQFg2xQN2ns","","","0k8MrtNHfiW8QGDlh-ZDcH0HKFpTeqxx-9yrMRUrZGM=",""
